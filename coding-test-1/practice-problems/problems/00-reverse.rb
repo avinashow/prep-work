@@ -6,6 +6,21 @@
 # Difficulty: easy.
 
 def reverse(string)
+  if !s.empty?
+    sarr = s.split(//)
+    srarr = Array.new
+    String srarr = ""
+    $i = s.length - 1
+    $j = 0
+    begin 
+        srarr = srarr << sarr[$i]
+        $i = $i - 1
+        $j = $j + 1
+    end while $i >= 0
+    return srarr
+  else
+    return s
+  end
 end
 
 # These are tests to check that your code is working. After writing
