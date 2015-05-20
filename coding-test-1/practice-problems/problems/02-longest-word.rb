@@ -7,6 +7,19 @@
 # Difficulty: easy.
 
 def longest_word(sentence)
+  sent= Array.new
+    sent = sentence.split()
+    $i = 0
+    word_length = sent[0].length
+    String lon = ""
+    while $i < sent.length do
+        if word_length < sent[$i].length
+            word_length = sent[$i].length
+            lon= sent[$i]
+        end
+        $i = $i + 1
+    end
+    return lon
 end
 
 # These are tests to check that your code is working. After writing
